@@ -12,11 +12,11 @@ public class Solution {
         int end = num;
         
         while (start <= end) {
-            int mid = start + (end - start)/2;
+            long mid = start + (end - start)/2;
             if (mid * mid > num) {
-                end = mid - 1;
+                end = (int) mid - 1;
             } else if (mid * mid < num) {
-                start = mid + 1;
+                start = (int) mid + 1;
             } else{
                 return true;
             }
