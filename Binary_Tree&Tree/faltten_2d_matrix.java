@@ -34,10 +34,9 @@ public class Vector2D implements Iterator<Integer> {
         while (indexList < vec.size()) {
             if (indexElement < vec.get(indexList).size()){
                 return true;
-            } else {
-                indexList++;
-                indexElement = 0;
             }
+            indexList++;
+            indexElement = 0;
         }
         
         return false;
